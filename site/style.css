@@ -175,6 +175,9 @@ footer {
 
 
 /*Оптимизация*/
+@media (min-width: 1001px){
+
+}
 @media (min-width: 200px) and (max-width: 539px){
 	.items {
 	flex-wrap: wrap;
