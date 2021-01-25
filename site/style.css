@@ -174,3 +174,22 @@ footer {
 }
 
 
+/*Оптимизация*/
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 200px) and (max-width: 1199px){
+	.items {
+	flex-wrap: wrap;
+}
+.box {
+	width: 80%;
+}
+.box__text li {
+	margin: 0 0 0 250px;
+}
+.box__text li:last-child {
+	margin: 0 0 15px 250px;
+}
+
+
