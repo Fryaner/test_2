@@ -1,85 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-	<title>Сервер майнкрафт</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+<html>
+<head lang="ru">
+	<title>Бар XIX век</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width" initial-scale="1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/slick.min.js"></script>
 </head>
 <body>
-	<div class="wrapper">
-		<header>
-			<div class="container">
-				<hgroup>
-					<h1 class="header__title"><span>Siensere</span> - Название чего-то</h1>
-					<h2 class="header__subtitle">Множество интересного и <span>увлекающего</span></h2>
-				</hgroup>
-				<nav class="navigation">
-					<ul class="navigation__list">
+	<header>
+		<div class="header-top">
+			<nav>
+				<ul class="navigation-list">
+					<li><a href="">Главная</a></li>
+					<li><a href="">Меню</a></li>
+					<li><a href="">Резервирование</a></li>
+					<li><a href="">О нас</a></li>
+					<li><a href="">Контакт</a></li>
+					<li><a href=""><img src="img/icons/corzina.png" alt="Корзина"></a></li>
+				</ul>
+			</nav>
+			<div class="top__bth">
+				<a href="#"><span>Забронируйте столик</span></a>
+			</div>
+		</div>
+		<div class="header-body">
+			<div class="slider">
+				<div class="slider__item">
+					<img src="img/backgrounds/test_header.png" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="img/backgrounds/test_header.png" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="img/backgrounds/test_header.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="header-footer">
+			<div class="header-footer__slogan">
+				<div class="slogan__top"><img src="img/icons/icon_food.png" alt="">
+
+				</div>
+				<div class="slogan__body"><img src="img/icons/violet_shape_line.png" alt="">
+					<div class="slogan__text">Нужно придумать слоган. Отображается нормально или нет посомтрим</div>
+				</div>
+				
+			</div>
+			<div class="header-footer__read">
+				<span class="read__title">Читать<br>отзывы</span>
+				<div class="read__bth"><a href="#">></a></div>
+			</div>
+			<div class="header-footer__call">
+				<span>Позвоните нам сейчас<br>доставка на дом</span>
+			</div>
+			<div class="header-footer__telephone">
+				<span>Номер телефона</span>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="description">
+			<article class="description-block">
+				<h1>О ресторане</h1>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus maiores odio magnam consectetur itaque enim illo laborum dignissimos unde expedita dolorem earum, repellendus, aperiam veniam? .</p>
+				<div class="description-block__button"><a href="">Читать больше</a>
+				<img src="img/images/5.png"></div>
+			</article>
+			<div class="description__image">
+				<div class="image__block-1">
+					<img src="img/images/1.png">
+					<img src="img/images/2.png">
+				</div>
+				<div class="image__block-2">
+					<img src="img/images/3.png">
+					<img src="img/images/4.png">
+				</div>
+			</div>
+		</section>
+
+	</main>		
+	<footer>
+			<aside class="footer__elements">
+				<div class="navigation">
+					<h2>Навигация</h2>
+					<ul>
 						<li><a href="">Главная</a></li>
 						<li><a href="">О нас</a></li>
-						<li><a href="">Магазин</a></li>
-						<li><a href="">Поддержка</a></li>
+						<li><a href="">Меню</a></li>
+						<li><a href="">Бронирование</a></li>
+						<li><a href="">Связаться с нами</a></li>
 					</ul>
-				</nav>
-			</div>
-		</header>
-		<main>
-			<section>
-				<div class="columns">
-					<div class="container">
-						<div class="columns__title"><h3>Товары для чего-то</h3></div>
-						<div class="items">
-							<div class="box">
-								<div class="box__title">V.I.P</div>
-								<div class="box__image"><img src="vip.jpg" alt="vip"></div>
-								<div class="box__text">
-									<ul>
-										<li>Баннер</li>
-										<li>Полет</li>
-										<li>Шкаф</li>
-										<li>Дима</li>
-									</ul>
-								</div>
-								<div class="box__bth"><a href="#">Купить</a></div>
-							</div>
-							<div class="box">
-								<div class="box__title">Premium</div>
-								<div class="box__image"><img src="vip.jpg" alt="vip"></div>
-								<div class="box__text">
-									<ul>
-										<li>Баннер</li>
-										<li>Полет</li>
-										<li>Шкаф</li>
-										<li>Дима</li>
-									</ul>
-								</div>
-								<div class="box__bth"><a href="#">Купить</a></div>
-							</div>
-							<div class="box">
-								<div class="box__title">Deluxe</div>
-								<div class="box__image"><img src="vip.jpg" alt="vip"></div>
-								<div class="box__text">
-									<ul>
-										<li>Баннер</li>
-										<li>Полет</li>
-										<li>Шкаф</li>
-										<li>Дима</li>
-									</ul>
-								</div>
-								<div class="box__bth"><a href="#">Купить</a></div>
-							</div>
-
-						</div>
+				</div>
+				<div class="news">
+					<h2>Новостная рассылка</h2>
+					<span>Введите свой адрес электронной почты и подпишитесь на ежедневную рассылку</span>
+					<form>
+						<input type="email" name="" placeholder="Email">
+						<button>Подписаться</button>
+					</form>
+					<div class="social">
+						<a href=""><img src="img/icons/facebook.png"></a>
+						<a href=""><img src="img/icons/twitter.png"></a>
+						<a href=""><img src="img/icons/google+.png"></a>
 					</div>
 				</div>
-			</section>
-		</main>
-		<footer>
-			<div class="container">
-				<div class="footer__text">&copy;2015 Text</div>
-			</div>
+			</aside>
+			<h2 class="footer__text">2021 &copy; Бар XIX, все права защищены</h2>
 		</footer>
-	</div>
 </body>
 </html>

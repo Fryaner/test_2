@@ -1,0 +1,262 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+@font-face {
+	font-family: Sports-World;
+	src: url(../sportsworld/sports-world.ttf);
+	font-style: normal;
+
+}
+body{
+	font-family: Sports-World;
+}
+/*Верх шапки*/
+header{
+	position: relative;
+}
+.header-top{
+	display: flex;
+	justify-content: center;
+	padding: 22px 0 22px 150px;
+
+}
+.header-top ul.navigation-list {
+	display: flex;
+	letter-spacing: 0.35px;
+	margin: 10px 0 0 0;
+}
+.header-top ul.navigation-list a {
+	color: #2c465a;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 0.35px;
+	padding:2px;
+}
+.header-top ul.navigation-list li {
+	padding: 0 0 0 33px;
+}
+.header-top ul.navigation-list li:last-child {
+	padding: 0 0 0 23px;
+	margin: 8px 0 0 0;
+}
+.top__bth {
+	border: 3px solid #fea100;
+	border-radius: 5px;
+	background: #fea100;
+	margin: 0 0 0 50px;
+}
+.top__bth a{
+	background: #fea100;
+	padding: 13px 18px;
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 5px;
+	color: white;
+}
+.top__bth span {
+	background: url(../img/icons/icon__button_header.png)0 0 no-repeat;
+	padding: 0 0 0 33px;
+}
+/*Подвал шапки*/
+.header-footer {
+	background: #edf1f3;
+	border-bottom: 1px solid #edf1f3;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 0 0 0 450px;
+}
+.header-footer__read {
+	background: url(../img/icons/icons8-chat-32.png)0 32px no-repeat;
+	padding: 0 0 20px 40px;
+	line-height: 20px;
+	display: flex;
+	border-right: 1px solid #e0e6e9;
+}
+.read__title {
+	margin: 28px 0 0 0;
+}
+.read__bth {
+	border: 2px solid #fea100;
+	border-radius: 50%;
+	background: #fea100;
+	margin: 0 0 0 10px;
+	height: 38px;
+	margin: 28px 35px 0 10px;
+}
+.read__bth a {
+	background: #fea100;
+	padding: 6px 13px;
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 50%;
+	color: black;
+	font-weight: 900;
+}
+.header-footer__call {
+	background: url(../img/icons/icons8-phone-message-32.png)0 30px no-repeat;
+	padding: 25px 40px 0 40px;
+	border-radius: 1px solid;
+	margin: 0 0 0 40px;
+	border-right: 1px solid #e0e6e9;
+	line-height: 20px;
+}
+.header-footer__telephone {
+	font-size: 25px;
+	padding: 30px 0 0 20px;
+}
+.header-footer__slogan {
+	position: absolute;
+	top: -80px;
+	left: -70px;
+
+}
+.slogan__body {
+	position: absolute;
+	top: 480px;
+	left: 245px;
+}
+.slogan__top {
+	position: absolute;
+	z-index: 1;
+	top: 440px;
+	left: 300px;
+
+}
+.slogan__text {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	margin: 0 10px;
+	text-align: center;
+	color: white;
+}
+/*Контент*/
+main {
+	max-width: 1172px;
+	margin: 64px auto 0 auto;
+}
+.description {
+	font-family: Arial, sans-serif;
+	display: flex;
+	margin: 0 0 100px 0;
+}
+.description .description-block {
+	margin: 50px 0 0 0;
+}
+.description .description-block h1 {
+	font-size: 30px;
+	margin: 0 0 36px 0;
+}
+.description .description-block p {
+	color: #7d8287;
+	line-height: 30px;
+	margin: 0 20px 0 0;
+}
+.description-block__button{
+	margin: 92px 0 0 0;
+}
+.button {
+	background: #fea100;
+	padding: 22px;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 5px;
+	margin: 5px 49px 0 0;
+	display: inline-block;
+}
+.description-block__button a {
+	background: #fea100;
+	padding: 22px;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 5px;
+	margin: 5px 49px 0 0;
+	display: inline-block;
+}
+.description__image {
+	display: flex;
+}
+.description__image img{
+	padding: 5px;
+}
+.image__block-1 {
+	margin: 50px 0 0 0;
+}
+/*footer*/
+footer {
+	background: #373844;
+}
+aside {
+	font-family: Arial, sans-serif;
+	max-width: 1172px;
+	margin: 64px auto 0 auto;
+	}
+.footer__elements {
+	display: flex;
+	padding: 100px 0 100px 0;
+}
+.navigation {
+	margin: 0 190px 0 0;
+}
+
+.footer__elements .navigation h2, .news h2 {
+	color: white;
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin: 0 0 35px 0;
+}
+.footer__elements .navigation a {
+	color: #a2a7ad;
+}
+.footer__elements .navigation li {
+	margin: 0 0 21px 0;
+}
+.news span {
+	color: #a2a7ad;
+	margin: 0 0 16px 0;
+	display: inline-block;
+}
+.news input {
+	border-radius: 5px;
+	border: 1px solid #52535e;
+	padding: 15px 50px;
+	background-color: #373844;
+	margin: 0 5px 0 0;
+
+}
+.news button {
+	padding: 16px 10px;
+	background: #fea100;
+	color: white;
+	font-family: Sports-World;
+	border-radius: 5px;
+}
+
+.social {
+	margin: 38px 0 0 0;
+}
+.social img {
+	padding: 0 5px 0 0;
+}
+.footer__text {
+	padding: 0 0 67px;
+	text-align: center;
+	color: #adb2b7;
+}
