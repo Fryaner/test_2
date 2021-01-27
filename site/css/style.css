@@ -25,9 +25,6 @@ body{
 	font-family: Sports-World;
 }
 /*Верх шапки*/
-header{
-	position: relative;
-}
 .header-top{
 	display: flex;
 	justify-content: center;
@@ -167,7 +164,7 @@ main {
 .description .description-block p {
 	color: #7d8287;
 	line-height: 30px;
-	margin: 0 20px 0 0;
+	padding: 0 20px 0 0;
 }
 .description-block__button{
 	margin: 92px 0 0 0;
@@ -259,4 +256,100 @@ aside {
 	padding: 0 0 67px;
 	text-align: center;
 	color: #adb2b7;
+}
+@media (min-width: 1200px) and (max-width: 1295px){
+.header-footer {
+	padding: 0 0 0 200px;
+}
+.header-footer__slogan {
+	position: absolute;
+	top: -120px;
+	left: -70px;
+}
+}
+@media (min-width: 792px) and (max-width: 1199px) {
+	.header-top{
+	display: flex;
+
+}
+.header-top ul.navigation-list {
+	display: flex;
+	letter-spacing: 0.35px;
+	margin: 10px 0 0 0;
+}
+.header-top ul.navigation-list a {
+	color: #2c465a;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 0.35px;
+	padding:2px;
+}
+.header-top ul.navigation-list li {
+	padding: 0 0 0 10px;
+}
+.header-top ul.navigation-list li:last-child {
+	padding: 0 0 0 10px;
+	margin: 8px 0 0 0;
+}
+.top__bth {
+	border: 3px solid #fea100;
+	border-radius: 5px;
+	background: #fea100;
+		margin: 0 0 0 10px;
+}
+.top__bth a{
+	background: #fea100;
+	padding: 13px 5px;
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 5px;
+	color: white;
+}
+
+/*Контент*/
+main {
+	max-width: 700px;
+	margin: 64px auto 0 auto;
+}
+aside {
+		max-width: 700px;
+	margin: 64px auto 0 auto;
+}
+.description-block__button img {
+
+	margin: 5px 0 0 0;
+
+}
+/**/
+/*Подвал шапки*/
+.header-footer {
+	padding: 0 0 0 100px;
+}
+.header-footer__slogan {
+	position: absolute;
+	top: -150px;
+	left: -130px;
+}
+.description {
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 100px 0;
+}
+.description-block__button{
+	margin: 50px 0 0 0;
+}
+.description__image {
+	display: flex;
+	width: 50%;
+	margin: 0 0 0 30px;
+}
+.image__block-1, .image__block-2 {
+	margin: 50px 0 0 0;
+}
+.description-block__button a {
+	margin: 5px 30px 0 0;
+}
 }

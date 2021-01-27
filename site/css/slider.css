@@ -28,8 +28,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 /* Лента слайдов */
 .slick-track{
-	display: block;
-	
+	margin: 0;
+	display: inline-block;
+	padding: 0;
+	width: 2000px;
 }
 /* Слайд */
 .slick-slide{}
@@ -75,7 +77,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	border: 2px solid white;
 	border-radius: 50%;
 }
-
 
 
 

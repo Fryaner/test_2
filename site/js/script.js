@@ -3,5 +3,7 @@ $(document).ready(function(){
   		dots: true,
   		arrows:false,
   		vertical:true,
+  		swipe: true,
+  		verticalSwiping:true,
 	});
 });
