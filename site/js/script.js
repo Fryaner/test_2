@@ -3,7 +3,20 @@ $(document).ready(function(){
   		dots: true,
   		arrows:false,
   		vertical:true,
-  		swipe: true,
-  		verticalSwiping:true,
+      verticalSwiping:true,
 	});
+});
+$(document).ready(function(){
+	$('.rows-slider').slick({
+  		dots: true,
+  		arrows:false,
+  		slidesToShow:2,
+  		slidesToScroll:1,
+	});
+});
+$(document).ready(function(){
+  $('.reviews-slider').slick({
+      dots: false,
+      arrows:true,
+  });
 });

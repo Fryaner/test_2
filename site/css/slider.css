@@ -28,10 +28,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 /* Лента слайдов */
 .slick-track{
-	margin: 0;
-	display: inline-block;
-	padding: 0;
-	width: 2000px;
+	display: block;
+	
 }
 /* Слайд */
 .slick-slide{}
@@ -52,24 +50,30 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
 /* Точки (булиты) */
-.slick-dots{
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slider .slick-track{
+	display: block;
+	
+}
+.slider {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		overflow: hidden;
+}
+.slider .slick-dots{
 	position: absolute;
 	top: 50%;
 	left: 20px;
 }
-.slider {
-	position: relative;
-	margin: 0 0 6px 0;
-}
-.slick-dots li{
-}
-/* Активная точка */
-.slick-dots li.slick-active button{
+.slider .slick-dots li.slick-active button{
 	border: 2px solid #fea100;
 
 }
-/* Элемент точки */
-.slick-dots li button{
+.slider .slick-dots li button{
 	font-size: 0;
 	width: 10px;
 	height: 10px;
@@ -77,8 +81,60 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	border: 2px solid white;
 	border-radius: 50%;
 }
+.rows-slider {
+	position: relative;
 
+}
+.rows-slider .slick-track{
+	display: flex;
+	
+}
+/* Активная точка */
+.rows-slider .slick-dots li.slick-active button{
+	border: 2px solid #fea100;
 
+}
+/* Элемент точки */
+.rows-slider .slick-dots li button{
+	font-size: 0;
+	background: inherit;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #aaa7ae;
+	border-radius: 50%;
+	margin: 0 5px 0 0;
+}
+.rows-slider .slick-dots{
+	position: absolute;
+	padding: 0px 0px 5px 5px;
+	display: flex;
+	background: white;
+	top: -40px;
+	left: 8px;
+}
+.reviews-slider {
+	position: relative;
+}
+.reviews-slider .slick-track {
+	display: flex;
+}
+.reviews-slider .slick-arrow{
+	font-size: 0;
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+	top: 25%;
 
-
-
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+	background: url(../img/icons/left_arrow.png)no-repeat;
+	left: 0;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+	background: url(../img/icons/right_arrow.png)no-repeat;
+	right: 0;
+}
+/* Стрелка не активная */
